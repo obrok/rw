@@ -1,0 +1,8 @@
+The code is targeted for the jruby interpreter. I am using
+some java libraries, in particular a Hidden Markov library
+Jahmm.
+
+ner.rb
+==================
+Uses Hmm to search for protagonists in a text when
+supplied with an initial list of protagonists. 
