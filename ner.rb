@@ -1,8 +1,11 @@
+# -*- coding: iso-8859-2 -*-
+
 require 'polish'
 require 'array'
 require 'observations'
 require 'utils'
 require 'hmm'
+require 'clp'
 
 text = ""
 
@@ -12,7 +15,7 @@ end
 
 observations = Observations.new(text)
 
-initial = ["Geralt"]
+initial = ["Geralt", "Yennefer", "Ciri", "Jaskier"]
 
 transitions = [[0,0],[0,0]] # Just two states, second signifies writing the hero name
 initial_probabilities = [0,0]
@@ -47,3 +50,5 @@ for fragment in text.split(/(\n[^\n]+(?=\n))/).select{|x| x != ""}
   model.names(fragment, observations).each {|x| names[x] += 1}
 end
 puts names.keys.sort{|x,y| names[x] - names[y]}
+puts ClpWrapper.index("by³a")
+puts "By³a"

@@ -38,13 +38,13 @@ public interface CLP extends Library {
 	/**
 	 * Original signature : <code>void clp_vec(int, const char*, int*, int*)</code><br>
 	 */
-	void clp_vec(int id, java.lang.String inp, IntBuffer out, IntBuffer num);
+	void clp_vec(int id, byte[] inp, IntBuffer out, IntBuffer num);
 	/**
 	 * Original signature : <code>void clp_rec(const char*, int*, int*)</code><br>
 	 */
-	void clp_rec(java.lang.String inp, IntBuffer out, IntBuffer num);
+	void clp_rec(byte[] inp, IntBuffer out, IntBuffer num);
 	/**
 	 * Original signature : <code>void clp_tag1(const char*, char*)</code><br>
 	 */
-	void clp_tag1(java.lang.String inp, ByteBuffer out);
+	void clp_tag1(byte[] inp, ByteBuffer out);
 }
