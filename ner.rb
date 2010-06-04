@@ -63,7 +63,7 @@ def cleanup(names)
     end
     result[temp[0]] = temp.inject(0){|sum, x| sum + names[x]}
   end  
-  result
+  result.delete_if{|x,y| y < 10}
 end
 
 names = cleanup(learn(text, initial))
