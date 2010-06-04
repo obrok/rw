@@ -20,6 +20,10 @@ end
 module ClpWrapper
   CLPInstance = Native.load_library("/usr/local/clp/lib/libclp_2.2.so", CLP.java_class)
   CLPInstance.clp_init
+  CLPHits = {}
+  CLPMisses = {}
+  LabelHits = {}
+  PositionHits = {}
 
   def self.version
     CLPInstance.clp_ver
@@ -27,27 +31,37 @@ module ClpWrapper
 
   def self.index(word)
     word = preprocess(word)
-    outputs = IntBuffer.allocate(10)
-    output_no = IntBuffer.allocate(1)
-    CLPInstance.clp_rec(word.to_bytes, outputs, output_no)
-    if output_no.get == 0
+    if CLPHits[word]
+      return CLPHits[word]
+    elsif CLPMisses[word]
       return nil
     else
-      return outputs.get
+      outputs = IntBuffer.allocate(10)
+      output_no = IntBuffer.allocate(1)
+      CLPInstance.clp_rec(word.to_bytes, outputs, output_no)
+      if output_no.get == 0
+        CLPMisses[word] = true
+        return nil
+      else
+        return CLPHits[word] = outputs.get
+      end
     end
   end
 
   def self.flex_label(word)
     word = preprocess(word)
+    return LabelHits[word] if LabelHits[word]
     index = ClpWrapper.index(word)
     return nil unless index
     outputs = ByteBuffer.allocate(10)
     CLPInstance.clp_label(index, outputs)
-    JString.new(outputs.array).to_s[/[A-Z]+/]
+    result = JString.new(outputs.array).to_s[/[A-Z]+/]
+    LabelHits[word] = result
   end
 
   def self.flex_position(word)
     word = preprocess(word)
+    return PositionHits[word] if PositionHits[word]
     outputs = IntBuffer.allocate(10)
     output_no = IntBuffer.allocate(1)
     index = ClpWrapper.index(word)
@@ -56,7 +70,7 @@ module ClpWrapper
     if output_no.get == 0
       return nil
     else
-      return outputs.get
+      return PostionHits[word] = outputs.get
     end
   end
 
