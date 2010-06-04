@@ -53,5 +53,18 @@ def learn(text, initial)
   names
 end
 
-names = learn(text, initial)
-puts names.keys.sort{|x,y| names[x] - names[y]}
+def cleanup(names)
+  result = {}
+  keys = names.keys
+  while !keys.empty?
+    temp, keys = keys.partition do |x|
+      size = [x.size, keys.first.size].min - 3
+      x[0..size] == keys.first[0..size]
+    end
+    result[temp[0]] = temp.inject(0){|sum, x| sum + names[x]}
+  end  
+  result
+end
+
+names = cleanup(learn(text, initial))
+puts names.keys.sort{|x,y| names[x] - names[y]}.map{|x| [x, names[x]].inspect}
