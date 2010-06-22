@@ -5,7 +5,11 @@ class Array
 
   def normalize!
     sum = self.sum
-    self.map!{|x| x.to_f/sum}
+    if sum == 0
+      self.map!{|x| 0.0}
+    else
+      self.map!{|x| x.to_f/sum}
+    end
   end
 end
 

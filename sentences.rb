@@ -8,41 +8,16 @@ require 'hmm'
 require 'clp'
 require 'yaml'
 
-text = ""
+class Sentences
+  @@tagged = File.open("tagged_sentences.yml", "r") do |file|
+    YAML.load(file)
+  end rescue {}
 
-for file in Dir.glob("teksty/*")
-  File.open(file) { |f| text += f.read }
-end
-
-def sentences(text)
-  text.scan(/(?:#{LETTER}| |-)+[,.!]/)
-end
-
-done = {}
-
-File.open("tagged_sentences.yml", "r") do |file|
-  done = YAML.load(file)
-end rescue nil
-
-sentences(text).each do |sentence|
-  unless done[sentence.strip]
-    temp = {}
-    puts sentence.strip
-    words = sentence.split(" ")
-    puts words.zip((0..words.size).to_a).map{|x,y| "#{y+1}: #{x}"}
-    puts "Wska¿ podmiot. 0 - brak."
-    temp[:subject] = [readline.to_i - 1]
-    puts "Wska¿ orzeczenie. 0 - brak."
-    temp[:verb] = [readline.to_i - 1]
-    puts "Wska¿ dope³nienie. 0 - brak."
-    temp[:object] = [readline.to_i - 1]
-    puts "Wska¿ przydawki, 0 - koniec."
-    temp[:compliments] = []
-    while (temp2 = readline.to_i) != 0
-      temp[:compliments] << temp2
-    end
-    done[sentence.strip] = temp
+  def self.sentences(text)
+    text.scan(/(?:#{LETTER}| |-)+[,.!]/)
   end
-end rescue nil
 
-File.open("tagged_sentences.yml", "w+") {|file| file << done.to_yaml}
+  def self.analyze(text)
+    Model.make_hmm([:verb, :subject, :object, :compliments], @@tagged).decode(@@tagged.keys.first)
+  end
+end

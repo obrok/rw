@@ -37,6 +37,10 @@ class Observations
     fragment.zip(fragment.map{|x| as_i(to_observable(x))})
   end
 
+  def size
+    observables.size
+  end
+
   private
   def next_number
     @number ||= 0
