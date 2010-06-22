@@ -18,6 +18,19 @@ class Sentences
   end
 
   def self.analyze(text)
-    Model.make_hmm([:verb, :subject, :object, :compliments], @@tagged).decode(@@tagged.keys.first)
+    model = Model.make_hmm([:verb, :subject, :object, :compliments], @@tagged)
+    sentences(text).select{|x| x.include?("Ciri")}.each do |sentence|
+      p sentence
+      p model.decode(sentence)
+      readline
+    end
   end
 end
+
+text = ""
+
+for file in Dir.glob("teksty/*")
+  File.open(file) { |f| text += f.read }
+end
+
+Sentences.analyze(text)

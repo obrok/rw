@@ -21,18 +21,21 @@ File.open("tagged_sentences.yml", "r") do |file|
   done = YAML.load(file)
 end rescue nil
 
-Sentences.sentences(text).each do |sentence|
+sentences = Sentences.sentences(text).select{|x| x.include?("Geralt")}
+puts "#{sentences.size} zdañ do przetworzenia"
+100.times do
+  sentence = sentences[rand(sentences.size)]
   unless done[sentence.strip]
     temp = {}
     puts sentence.strip
     words = sentence.split(" ")
     puts words.zip((0..words.size).to_a).map{|x,y| "#{y+1}: #{x}"}
     puts "Wska¿ podmiot. 0 - brak."
-    temp[:subject] = [readline.to_i - 1]
+    temp[:subject] = [readline.to_i - 1].select{|x| x > 0}
     puts "Wska¿ orzeczenie. 0 - brak."
-    temp[:verb] = [readline.to_i - 1]
+    temp[:verb] = [readline.to_i - 1].select{|x| x > 0}
     puts "Wska¿ dope³nienie. 0 - brak."
-    temp[:object] = [readline.to_i - 1]
+    temp[:object] = [readline.to_i - 1].select{|x| x > 0}
     puts "Wska¿ przydawki, 0 - koniec."
     temp[:compliments] = []
     while (temp2 = readline.to_i) != 0
