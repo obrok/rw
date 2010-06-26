@@ -37,11 +37,21 @@ class Model
   end
 
   def decode(text)
-    obs_sequence = @observations.convert_to_observations(text)
-    observation_list = ArrayList.new
-    obs_sequence.each {|x| observation_list.add(ObservationInteger.new(x[1]))}
+    observation_list = observation_sequence(text)
     return [] if observation_list.size == 0
     return @hmm.most_likely_state_sequence(observation_list).map{|x| @state_names[x]}
+  end
+
+  def extract(state, text)
+    observation_list = observation_sequence(text)
+    return [], 1 if observation_list.size == 0
+    state_seq = @hmm.most_likely_state_sequence(observation_list)
+    p1 = @hmm.probability(observation_list, state_seq)
+    p2 = @hmm.probability(observation_list)
+    prob = p2 == 0 ? 0.0 : p1/p2;
+    state_seq = state_seq.map{|x| @state_names[x]}
+    
+    return text.split.zip(state_seq).select{|x| x[1] == state}.map{|x| x[0]}, prob
   end
 
   def names(fragment, observations)
@@ -64,7 +74,6 @@ class Model
 
     for text in tagged_texts.keys
       obs_sequence = observations.convert_to_observations(text).map{|x| x[1]}      
-
       state_sequence = obs_sequence.map{|x| :default}
       for state, indices in tagged_texts[text]
         indices.each do |i|
@@ -83,5 +92,13 @@ class Model
     emissions.each {|x| x.normalize!}
 
     return Model.new(initial, transitions, emissions, state_nos, observations)
+  end
+  
+  private
+  def observation_sequence(text)
+    obs_sequence = @observations.convert_to_observations(text)
+    observation_list = ArrayList.new
+    obs_sequence.each {|x| observation_list.add(ObservationInteger.new(x[1]))}
+    observation_list
   end
 end
