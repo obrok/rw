@@ -14,11 +14,12 @@ for file in Dir.glob("teksty/*")
 end
 
 initial = "Geralt"
+initial_negative = "Brokilon"
 states = [:hero]
 fragments = text.split(/(\n[^\n]+(?=\n))/)
 examples = {}
 
-for fragment in fragments.select{|x| x.include?(initial)}
+for fragment in fragments.select{|x| x.include?(initial) || x.include?(initial_negative)}
   text = fragment.strip.split
   occurences = []
   text.each_with_index{|x,i| occurences << i if x =~ /#{initial}/}
@@ -26,7 +27,12 @@ for fragment in fragments.select{|x| x.include?(initial)}
 end
 
 model = Model.make_hmm(states, examples)
+names = Hash.new(0)
 for fragment in fragments
-  names, prob = model.extract(:hero, fragment)
-  p names, prob; readline if prob != 0 && names != []
+  extracted, prob = model.extract(:hero, fragment)
+  for name in extracted
+    names[name.gsub(/\.|,|!|\?/, "").upcase] += prob
+  end
 end
+
+puts names.keys.select{|x| names[x] > 0}.sort{|x,y| names[x] - names[y]}.map{|x| "#{x}: #{names[x]}"}
