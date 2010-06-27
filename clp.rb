@@ -2,6 +2,7 @@ require 'polish'
 require 'java'
 require 'jna.jar'
 require 'clp/clp.jar'
+require 'iconv'
 
 java_import "com.sun.jna.Native"
 java_import "CLP"
@@ -72,6 +73,15 @@ module ClpWrapper
     else
       return PostionHits[word] = outputs.get
     end
+  end
+
+  def self.base_form(word)
+    word = preprocess(word)
+    outputs = ByteBuffer.allocate(50)
+    index = ClpWrapper.index(word)
+    return nil unless index
+    CLPInstance.clp_bform(index, outputs)
+    JString.new(outputs.array).to_s.gsub("\000", "")
   end
 
   def self.preprocess(word)
