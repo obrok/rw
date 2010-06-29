@@ -47,7 +47,7 @@ words = counts.keys.sort{|x,y| counts[y] - counts[x]}
 words.each_with_index do |word, i|
   prompt = "#{words.size - i} s³ów do przetworzenia; odpowiedz 1-5 albo k - koniec"
   puts Iconv.conv("utf-8", "iso-8859-2", prompt)
-  puts Iconv.conv("utf-8", "iso-8859-2", word), word.part_of_speech
+  puts Iconv.conv("utf-8", "iso-8859-2", word), word.part_of_speech, "#{counts[word]} wystapien"
   answer = readline.to_i
   if answer != 0
     done[word] = (answer-3)/2.0
