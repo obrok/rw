@@ -7,7 +7,8 @@ require 'utils'
 require 'hmm'
 require 'clp'
 require 'yaml'
-require 'sentences'
+require 'string'
+require 'iconv'
 
 text = ""
 
@@ -17,32 +18,27 @@ end
 
 done = {}
 
-File.open("tagged_sentences.yml", "r") do |file|
+File.open("tagged_words.yml", "r") do |file|
   done = YAML.load(file)
 end rescue nil
 
-sentences = Sentences.sentences(text).select{|x| x.include?("Geralt")}
-puts "#{sentences.size} zdañ do przetworzenia"
-100.times do
-  sentence = sentences[rand(sentences.size)]
-  unless done[sentence.strip]
-    temp = {}
-    puts sentence.strip
-    words = sentence.split(" ")
-    puts words.zip((0..words.size).to_a).map{|x,y| "#{y+1}: #{x}"}
-    puts "Wska¿ podmiot. 0 - brak."
-    temp[:subject] = [readline.to_i - 1].select{|x| x > 0}
-    puts "Wska¿ orzeczenie. 0 - brak."
-    temp[:verb] = [readline.to_i - 1].select{|x| x > 0}
-    puts "Wska¿ dope³nienie. 0 - brak."
-    temp[:object] = [readline.to_i - 1].select{|x| x > 0}
-    puts "Wska¿ przydawki, 0 - koniec."
-    temp[:compliments] = []
-    while (temp2 = readline.to_i) != 0
-      temp[:compliments] << temp2
-    end
-    done[sentence.strip] = temp
+words = text.split.map{|x| x.base_form}.select{|x| !done[x] && x.part_of_speech}
+counts = Hash.new(0)
+for word in words
+  counts[word] += 1
+end
+words = counts.keys.sort{|x,y| counts[y] - counts[x]}
+
+words.each_with_index do |word, i|
+  prompt = "#{words.size - i} s³ów do przetworzenia; odpowiedz 1-5 albo k - koniec"
+  puts Iconv.conv("utf-8", "iso-8859-2", prompt)
+  puts Iconv.conv("utf-8", "iso-8859-2", word), word.part_of_speech
+  answer = readline.to_i
+  if answer != 0
+    done[word] = (answer-3)/2.0
+  else
+    break
   end
 end rescue nil
 
-File.open("tagged_sentences.yml", "w+") {|file| file << done.to_yaml}
+File.open("tagged_words.yml", "w+") {|file| file << done.to_yaml}

@@ -13,8 +13,8 @@ class String
   end
 
   def base_form
-    label = ClpWrapper.flex_label(self)
-    return self unless label
+    index = ClpWrapper.index(self)
+    return self unless index
     return ClpWrapper.base_form(self)
   end
 end

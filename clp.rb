@@ -81,7 +81,7 @@ module ClpWrapper
     index = ClpWrapper.index(word)
     return nil unless index
     CLPInstance.clp_bform(index, outputs)
-    JString.new(outputs.array).to_s.gsub("\000", "")
+    Iconv.conv("iso-8859-2", "utf-8", JString.new(outputs.array, "iso-8859-2").to_s.gsub("\000", ""))
   end
 
   def self.preprocess(word)
