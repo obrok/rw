@@ -6,6 +6,7 @@ require 'observations'
 require 'utils'
 require 'hmm'
 require 'clp'
+require 'descriptors'
 
 text = ""
 
@@ -20,9 +21,9 @@ fragments = text.split(/(\n[^\n]+(?=\n))/)
 examples = {}
 
 for fragment in fragments.select{|x| x.include?(initial) || x.include?(initial_negative)}
-  text = fragment.strip.split
+  temp = fragment.strip.split
   occurences = []
-  text.each_with_index{|x,i| occurences << i if x =~ /#{initial}/}
+  temp.each_with_index{|x,i| occurences << i if x =~ /#{initial}/}
   examples[fragment] = {:hero => occurences}
 end
 
@@ -31,8 +32,14 @@ names = Hash.new(0)
 for fragment in fragments
   extracted, prob = model.extract(:hero, fragment)
   for name in extracted
-    names[name.gsub(/\.|,|!|\?/, "").upcase] += prob
+    names[name.gsub(/\.|,|!|\?/, "")] += prob
   end
 end
 
-puts names.keys.select{|x| names[x] > 0}.sort{|x,y| names[x] - names[y]}.map{|x| "#{x}: #{names[x]}"}
+for name in names.keys.select{|x| names[x] > 0}.sort{|x,y| names[y] - names[x]}
+  for other_name in names.keys.select{|x| names[x] > 0}.sort{|x,y| names[y] - names[x]}
+    puts name, other_name
+    p EmotionalClassifier.classify_relation(name, other_name, text)
+    readline
+  end
+end
