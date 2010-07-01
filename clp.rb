@@ -25,6 +25,7 @@ module ClpWrapper
   CLPMisses = {}
   LabelHits = {}
   PositionHits = {}
+  BaseFormHits = {}
 
   def self.version
     CLPInstance.clp_ver
@@ -77,11 +78,12 @@ module ClpWrapper
 
   def self.base_form(word)
     word = preprocess(word)
+    return BaseFormHits[word] if BaseFormHits[word]
     outputs = ByteBuffer.allocate(50)
     index = ClpWrapper.index(word)
     return nil unless index
     CLPInstance.clp_bform(index, outputs)
-    Iconv.conv("iso-8859-2", "utf-8", JString.new(outputs.array, "iso-8859-2").to_s.gsub("\000", ""))
+    BaseFormHits[word] = Iconv.conv("iso-8859-2", "utf-8", JString.new(outputs.array, "iso-8859-2").to_s.gsub("\000", ""))
   end
 
   def self.preprocess(word)

@@ -7,6 +7,7 @@ require 'utils'
 require 'hmm'
 require 'clp'
 require 'descriptors'
+require 'hero'
 
 text = ""
 
@@ -36,10 +37,11 @@ for fragment in fragments
   end
 end
 
-for name in names.keys.select{|x| names[x] > 0}.sort{|x,y| names[y] - names[x]}
-  for other_name in names.keys.select{|x| names[x] > 0}.sort{|x,y| names[y] - names[x]}
-    puts name, other_name
-    p EmotionalClassifier.classify_relation(name, other_name, text)
-    readline
-  end
-end
+keys = names.keys.select{|x| names[x] > 1}
+importance = keys.map{|x| names[x]}
+importance.normalize!
+heroes = keys.zip(importance).map{|x| Hero.new(x[0], x[1])}
+
+EmotionalClassifier.classify(heroes, text)
+
+puts heroes.sort{|x,y| y.importance - x.importance}
