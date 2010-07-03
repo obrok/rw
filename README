@@ -1,8 +1,19 @@
-The code is targeted for the jruby interpreter. I am using
-some java libraries, in particular a Hidden Markov library
-Jahmm.
+Wa¿niejsze pliki:
 
-ner.rb
-==================
-Uses Hmm to search for protagonists in a text when
-supplied with an initial list of protagonists. 
+analyze.rb - skrypt analizuj¹cy tekst na przy u¿yciu wczeœniej wytworzonych przyk³adów
+prepare.rb - skrypt wytwarzaj¹cy z tekstu anotowane przyk³ady do nauki
+descriptors.rb - plik zawieraj¹cy logikê zwi¹zan¹ z ocen¹ postaci
+hmm.rb - wrapper na jahmm
+clp.rb - wrapper na javowy wrapper na clp
+tagged_words.yml - plik zawieraj¹cy s³owa i ocenê ich nacechowania emocjonalnego
+doc/opracowanie.pdf - sprawozdanie
+
+Wymagania do uruchomienia programu
+
+- jruby - zainstalowany lub w formie jar
+- clp - musi siê znajdowaæ w /usr/local/clp jak na wierzbie
+
+Przyk³ad uruchomienia programu na wierzbie
+
+$ /usr/local/jdk1.6.0/bin/java -jar jruby-complete-1.4.0.jar prepare.rb /usr/local/teksty/polskie/wspolczesne/Sapkowski/Miecz.iso Geralt Brokilon > model.yml
+$ /usr/local/jdk1.6.0/bin/java -jar jruby-complete-1.4.0.jar analyze.rb /usr/local/teksty/polskie/wspolczesne/Sapkowski/Miecz.iso model.yml
