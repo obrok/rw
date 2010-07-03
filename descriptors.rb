@@ -46,7 +46,7 @@ class EmotionalClassifier
           if dist1 && dist2 && (dist1 + dist2) != 0
             relations[i][j] += value*1.0/(dist1+dist2)
             word_nos[i][j] += 1
-            personal[names[i]][word] += 1.0/dist1 if i == j
+            personal[names[i]][word.base_form] += 1.0/dist1 if i == j
           end
         end
       end
