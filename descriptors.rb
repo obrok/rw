@@ -39,9 +39,13 @@ class EmotionalClassifier
       end
 
       value = word.emotional_value
-      dists.each_with_index do |dist1, i|
+      indices = dists.min2indices
+
+      for i in indices
+        dist1 = dists[i]
         next if dist1 > radius
-        dists.each_with_index do |dist2, j|
+        for j in indices
+          dist2 = dists[j]
           next if dist2 > radius
           if dist1 && dist2 && (dist1 + dist2) != 0
             relations[i][j] += value*1.0/(dist1+dist2)

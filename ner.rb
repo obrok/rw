@@ -11,7 +11,7 @@ require 'hero'
 
 text = ""
 
-for file in Dir.glob("teksty/*")
+for file in Dir.glob("teksty/*.iso")
   File.open(file) { |f| text += f.read }
 end
 
