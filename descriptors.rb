@@ -23,15 +23,15 @@ class EmotionalClassifier
       text.each_with_index {|x,i| name_locs[index] << i if x =~ /#{names[index]}/}
     end
 
-    time = Time.now
-    name_idxs = [0]*name_locs.size    
+    puts "Obliczanie macierzy powi±zañ"
+    name_idxs = [0]*name_locs.size
     text.each_with_index do |word, index|
       0.upto(name_idxs.size - 1) {|i| name_idxs[i] += 1 while name_idxs[i] < name_locs[i].size && name_locs[i][name_idxs[i]] < index}
+
       if index % 1000 == 0
-        puts Time.now - time
-        time = Time.now
-        puts index
+        puts (index.to_f/text.size*100).to_i.to_s + "%"
       end
+
       dists = []
       for i in 0..(name_locs.size - 1)
         j = name_idxs[i]
@@ -46,7 +46,6 @@ class EmotionalClassifier
         next if dist1 > radius
         for j in indices
           dist2 = dists[j]
-          next if dist2 > radius
           if dist1 && dist2 && (dist1 + dist2) != 0
             relations[i][j] += value*1.0/(dist1+dist2)
             word_nos[i][j] += 1

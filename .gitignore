@@ -4,3 +4,4 @@ clp/clp.jar
 *.class
 .#*
 *#
+model.yml

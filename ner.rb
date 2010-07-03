@@ -9,39 +9,36 @@ require 'clp'
 require 'descriptors'
 require 'hero'
 
-text = ""
+def prepare_examples(text, initial, initial_negative)
+  fragments = text.split(/(\n[^\n]+(?=\n))/)
+  examples = {}
 
-for file in Dir.glob("teksty/*.iso")
-  File.open(file) { |f| text += f.read }
-end
-
-initial = "Geralt"
-initial_negative = "Brokilon"
-states = [:hero]
-fragments = text.split(/(\n[^\n]+(?=\n))/)
-examples = {}
-
-for fragment in fragments.select{|x| x.include?(initial) || x.include?(initial_negative)}
-  temp = fragment.strip.split
-  occurences = []
-  temp.each_with_index{|x,i| occurences << i if x =~ /#{initial}/}
-  examples[fragment] = {:hero => occurences}
-end
-
-model = Model.make_hmm(states, examples)
-names = Hash.new(0)
-for fragment in fragments
-  extracted, prob = model.extract(:hero, fragment)
-  for name in extracted
-    names[name.gsub(/\.|,|!|\?/, "")] += prob
+  for fragment in fragments.select{|x| x.include?(initial) || x.include?(initial_negative)}
+    temp = fragment.strip.split
+    occurences = []
+    temp.each_with_index{|x,i| occurences << i if x =~ /#{initial}/}
+    examples[fragment] = {:hero => occurences}
   end
+  examples
 end
 
-keys = names.keys.select{|x| names[x] > 1}
-importance = keys.map{|x| names[x]}
-importance.normalize!
-heroes = keys.zip(importance).map{|x| Hero.new(x[0], x[1])}
+def analyze(text, examples)
+  fragments = text.split(/(\n[^\n]+(?=\n))/)
+  states = [:hero]
+  model = Model.make_hmm(states, examples)
+  names = Hash.new(0)
+  for fragment in fragments
+    extracted, prob = model.extract(:hero, fragment)
+    for name in extracted
+      names[name.gsub(/\.|,|!|\?/, "")] += prob
+    end
+  end
 
-EmotionalClassifier.classify(heroes, text)
+  keys = names.keys.select{|x| names[x] > 1}
+  importance = keys.map{|x| names[x]}
+  importance.normalize!
+  heroes = keys.zip(importance).map{|x| Hero.new(x[0], x[1])}
 
-puts heroes.sort{|x,y| y.importance - x.importance}
+  EmotionalClassifier.classify(heroes, text)
+  heroes
+end
