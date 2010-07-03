@@ -1,0 +1,325 @@
+Obliczanie macierzy powi±zañ
+0%
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+7%
+8%
+9%
+10%
+11%
+12%
+13%
+14%
+15%
+16%
+17%
+18%
+19%
+20%
+21%
+22%
+23%
+24%
+25%
+26%
+27%
+28%
+29%
+30%
+31%
+32%
+33%
+34%
+35%
+36%
+37%
+37%
+38%
+39%
+40%
+41%
+42%
+43%
+44%
+45%
+46%
+47%
+48%
+49%
+50%
+51%
+52%
+53%
+54%
+55%
+56%
+57%
+58%
+59%
+60%
+61%
+62%
+63%
+64%
+65%
+66%
+67%
+68%
+69%
+70%
+71%
+72%
+73%
+74%
+74%
+75%
+76%
+77%
+78%
+79%
+80%
+81%
+82%
+83%
+84%
+85%
+86%
+87%
+88%
+89%
+90%
+91%
+92%
+93%
+94%
+95%
+96%
+97%
+98%
+99%
+Sta¶
+	WaÅ¼noÅ›Ä‡: 0.508920459663387
+	PozytywnoÅ›Ä‡: 0.331971925607628 (0.380903943553647)
+	SÅ‚owa kluczowe: dzieñ, noc, dziecko, koniec, zabiæ, pierwsza, bia³y, inny, ¿ycie, s³oñce
+	Relacje:
+		Nel: 0.433214675888301
+		Stasia: 0.296274150411653
+		Stasiowi: 0.093120903485686
+		Fatma: 0.407883760119055
+		Chamis: 0.419781382736655
+		Saba: 0.730126693084107
+		Idrysa: 0.228921487325573
+		Idrys: 0.627423556386689
+		Gebhr: -1.0
+		Sudañczyk: 0.208983870971339
+		Stasiu: 1.0
+		Kali: 0.442252930649966
+		Linde: 0.510814456578081
+Nel
+	WaÅ¼noÅ›Ä‡: 0.136228196820517
+	PozytywnoÅ›Ä‡: 0.375646732869839 (0.473951501590271)
+	SÅ‚owa kluczowe: dzieñ, dziecko, ¿ycie, ojciec, noc, nagle, serce, koniec, dobro, si³a
+	Relacje:
+		Sta¶: 0.432579072017075
+		Stasia: 0.557691226918754
+		Stasiowi: 0.33767641083056
+		Fatma: 0.704272114885662
+		Chamis: 0.910496696853151
+		Saba: 0.68855738286951
+		Idrysa: 0.733331187013985
+		Idrys: 0.836712914457442
+		Gebhr: 0.00474635851642594
+		Sudañczyk: 0.251051944367242
+		Stasiu: 1.0
+		Kali: 0.492150000541366
+		Linde: 0.568262638131847
+Idrys
+	WaÅ¼noÅ›Ä‡: 0.0848627380857716
+	PozytywnoÅ›Ä‡: 0.309516742271496 (0.485678444591675)
+	SÅ‚owa kluczowe: dzieñ, noc, rozmowa, rozkaz, pomoc, ¿ycie, dziecko, pier¶, inny, prawdziwy
+	Relacje:
+		Sta¶: 0.468541594384416
+		Nel: 0.736241237186913
+		Stasia: -1.0
+		Stasiowi: 0.751349705947856
+		Fatma: 0.419957976049338
+		Chamis: 0.471501710016698
+		Saba: 0.677778305856062
+		Idrysa: 1.0
+		Gebhr: 0.510686338181187
+		Sudañczyk: 0.129132774486385
+		Stasiu: 0.188993347466336
+Kali
+	WaÅ¼noÅ›Ä‡: 0.0815080028434288
+	PozytywnoÅ›Ä‡: 0.239255043971756 (0.33143376012448)
+	SÅ‚owa kluczowe: dobre, dzieñ, s³oñce, noc, zabicie, koniec, bia³y, zabiæ, z³e, dobry
+	Relacje:
+		Sta¶: 0.262906653462876
+		Nel: 0.248245184996027
+		Stasia: 0.224453676790169
+		Stasiowi: 0.381440719608324
+		Chamis: 0.20622084303807
+		Saba: -0.858245761866634
+		Gebhr: -1.0
+		Sudañczyk: 1.0
+		Stasiu: -0.302811592707706
+		Linde: 0.106348702393974
+Stasiowi
+	WaÅ¼noÅ›Ä‡: 0.0402579559668836
+	PozytywnoÅ›Ä‡: 0.266787798272211 (0.396148816258168)
+	SÅ‚owa kluczowe: ¶wiat³o, z³e, zabiæ, serce, pamiêæ, pierwsza, dziwny, ojciec, bia³y, ciekawy
+	Relacje:
+		Sta¶: 0.0556063351893511
+		Nel: 0.120708241743358
+		Stasia: 0.167608429742962
+		Fatma: 1.0
+		Chamis: -0.0822372456159837
+		Saba: -1.0
+		Idrysa: 0.786051017113335
+		Idrys: 0.518209659315516
+		Gebhr: 0.137656287694987
+		Sudañczyk: 0.251051574997709
+		Kali: 0.245161887345517
+		Linde: 0.40026206015581
+Stasia
+	WaÅ¼noÅ›Ä‡: 0.0247094714905604
+	PozytywnoÅ›Ä‡: 0.25523403368403 (0.254000848987355)
+	SÅ‚owa kluczowe: rozkaz, dziecko, ojciec, koniec, dzieñ, serce, wypadek, noc, pier¶, bia³y
+	Relacje:
+		Sta¶: 0.456946857896948
+		Nel: 0.867296474400361
+		Stasiowi: 0.4634401912239
+		Fatma: 0.757777777777778
+		Chamis: -0.073751356587306
+		Saba: 0.491066136330602
+		Idrysa: -0.16763959922894
+		Idrys: -1.0
+		Gebhr: -0.98115675756456
+		Sudañczyk: 0.100447191697192
+		Stasiu: 1.0
+		Kali: 0.558313537473244
+		Linde: 0.629041053343714
+Fatma
+	WaÅ¼noÅ›Ä‡: 0.0245707044505107
+	PozytywnoÅ›Ä‡: 0.544296257736053 (1.0)
+	SÅ‚owa kluczowe: dziecko, szlachetny, ¿ycie, ¿ona, le¿e, dobro, dziêki, rozmowa, znak, potê¿ny
+	Relacje:
+		Sta¶: 0.191270641822456
+		Nel: 0.251065433322379
+		Stasia: 0.184140914943573
+		Stasiowi: 1.0
+		Chamis: 0.478915411027515
+		Idrys: 0.174995488071109
+		Gebhr: 0.423176699101512
+		Sudañczyk: 0.675341381357609
+Sudañczyk
+	WaÅ¼noÅ›Ä‡: 0.0168765718643159
+	PozytywnoÅ›Ä‡: 0.314282878175669 (0.426116634730308)
+	SÅ‚owa kluczowe: serce, dobro, dziecko, wyra¼nie, z³e, pierwsza, ¿ycie, nienawi¶æ, dzieñ, noc
+	Relacje:
+		Sta¶: 0.043465473503051
+		Nel: 0.0997870889445135
+		Stasia: 0.020030525030525
+		Stasiowi: 0.204926923172958
+		Fatma: 1.0
+		Chamis: -0.927773266562405
+		Saba: 0.559990860043424
+		Idrysa: 0.255456870895586
+		Idrys: 0.0765753377707719
+		Gebhr: -1.0
+		Kali: 0.494545454545455
+		Linde: 0.0657684566106904
+Stasiu
+	WaÅ¼noÅ›Ä‡: 0.0157211547634572
+	PozytywnoÅ›Ä‡: 0.520817759269178 (0.738946352810592)
+	SÅ‚owa kluczowe: prawda, dobro, ¶mieræ, dzieñ, koniec, powa¿nie, pot, wysoki, si³a, sen
+	Relacje:
+		Sta¶: 0.933885425417898
+		Nel: 1.0
+		Stasia: 0.632317648516642
+		Saba: 0.586721954133809
+		Idrys: 0.467531094958592
+		Gebhr: -1.0
+		Kali: -0.167996034695765
+		Linde: 0.175301071661931
+Linde
+	WaÅ¼noÅ›Ä‡: 0.0155172670229879
+	PozytywnoÅ›Ä‡: 0.390749380966358 (0.465918445628313)
+	SÅ‚owa kluczowe: dzieñ, pot, dziecko, dobro, ¶mieræ, pomoc, d³ugi, inny, niebo, bia³y
+	Relacje:
+		Sta¶: 0.757242124814909
+		Nel: 0.557380898622571
+		Stasia: 0.693574510214293
+		Stasiowi: 1.0
+		Saba: 0.511049069587946
+		Gebhr: -1.0
+		Stasiu: 0.222493314442557
+		Kali: 0.241737179992931
+Idrysa
+	WaÅ¼noÅ›Ä‡: 0.0149358601515899
+	PozytywnoÅ›Ä‡: 0.238727135105965 (0.463622327008381)
+	SÅ‚owa kluczowe: noc, rozmowa, ¿ycie, piê¶æ, rozkaz, pier¶, dzieñ, serce, szczê¶cie, wysoki
+	Relacje:
+		Sta¶: 0.114591821698651
+		Nel: 0.346425713186677
+		Stasia: -1.0
+		Stasiowi: 0.768695777906304
+		Chamis: 1.0
+		Idrys: 0.552027150507459
+		Gebhr: 0.862276416404009
+		Sudañczyk: 0.438270290236929
+Chamis
+	WaÅ¼noÅ›Ä‡: 0.0139716636025964
+	PozytywnoÅ›Ä‡: 0.230401357255345 (0.259715475792331)
+	SÅ‚owa kluczowe: dziecko, dzieñ, rana, zabiæ, ojciec, noc, inny, rozkaz, pomoc, przyjemno¶æ
+	Relacje:
+		Sta¶: 0.162451160965253
+		Nel: 0.315198613565524
+		Stasia: -0.0198813151158369
+		Stasiowi: -0.281685111410855
+		Fatma: 0.742797859889414
+		Saba: -0.0869153598489339
+		Idrysa: 1.0
+		Idrys: 0.281820185082945
+		Gebhr: -1.0
+		Sudañczyk: -0.599547036409153
+		Kali: 0.168683310139219
+Saba
+	WaÅ¼noÅ›Ä‡: 0.0116174681766521
+	PozytywnoÅ›Ä‡: 0.191240455184133 (0.303662990103687)
+	SÅ‚owa kluczowe: ³apa, bia³y, kie³, dziecko, czarny, s³oñce, trup, noc, krew, ¿ycie
+	Relacje:
+		Sta¶: 0.399827754346584
+		Nel: 0.436907070599712
+		Stasia: 0.205136140288344
+		Stasiowi: -1.0
+		Chamis: -0.0297764222353362
+		Idrys: 0.669256791613068
+		Gebhr: 0.173957920623116
+		Sudañczyk: 1.0
+		Stasiu: 0.375305087890417
+		Kali: -0.158103870165953
+		Linde: 0.122927468627209
+Gebhr
+	WaÅ¼noÅ›Ä‡: 0.0103024850973418
+	PozytywnoÅ›Ä‡: -0.509323650661739 (-1.0)
+	SÅ‚owa kluczowe: miecz, nó¿, zabicie, ¶mieræ, pot, dziecko, inny, zabiæ, dzieñ, rozkaz
+	Relacje:
+		Sta¶: -0.353545114885196
+		Nel: -0.0427984192421609
+		Stasia: -0.762682863570001
+		Stasiowi: 0.363092979779217
+		Fatma: 0.478838349250698
+		Chamis: -0.427558438140635
+		Saba: 0.0798042717662154
+		Idrysa: 1.0
+		Idrys: 0.275450004926605
+		Sudañczyk: -0.265539627759602
+		Stasiu: -1.0
+		Kali: -0.284109217170456
+		Linde: -0.173315413865616

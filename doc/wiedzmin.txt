@@ -1,0 +1,669 @@
+Obliczanie macierzy powi±zañ
+0%
+0%
+1%
+2%
+3%
+4%
+5%
+6%
+7%
+8%
+9%
+10%
+11%
+12%
+13%
+14%
+15%
+16%
+17%
+18%
+19%
+20%
+21%
+22%
+23%
+24%
+25%
+26%
+27%
+28%
+29%
+30%
+31%
+32%
+33%
+34%
+35%
+36%
+37%
+38%
+39%
+40%
+41%
+42%
+43%
+44%
+45%
+46%
+47%
+48%
+49%
+50%
+51%
+52%
+53%
+54%
+55%
+56%
+57%
+58%
+59%
+60%
+61%
+62%
+63%
+64%
+65%
+66%
+67%
+68%
+69%
+70%
+71%
+72%
+73%
+74%
+75%
+76%
+77%
+78%
+79%
+80%
+81%
+82%
+83%
+84%
+85%
+86%
+87%
+88%
+89%
+90%
+91%
+92%
+93%
+94%
+95%
+96%
+97%
+98%
+99%
+Geralt
+	WaÅ¼noÅ›Ä‡: 0.242690736997358
+	PozytywnoÅ›Ä‡: 0.117728243440885 (0.146847019427319)
+	SÅ‚owa kluczowe: miecz, smok, spokojnie, prawda, dobro, zimno, potwora, ¿ycie, dziecko, usta
+	Relacje:
+		Andrzej: -0.0357526566371521
+		Wied¼min: 0.0537978351825914
+		Freixenet: 0.119700923951652
+		Eithn: 0.726490998008386
+		Braenn: 0.0483366606379389
+		Ciri: 0.557990777026243
+		Yennefer: -0.100596736267283
+		Istredd: -0.00176531835511331
+		Yen: 1.0
+		Dainty: 0.0142898567278244
+		Doppler: -0.106910593219173
+		Tellico: -0.0710472338086175
+		Taak: 0.175979346480312
+		Chappelle: 0.622466008379817
+		Vivaldi: -0.0372933813895605
+		Nivellen: 0.294088996683767
+		Bruxa: -0.428964244069088
+		Vea: 0.529519020036836
+		Zerrikanki: 0.493395526604084
+		Dorregaray: 0.052677902632246
+		Boholt: -0.105123701055678
+		Yarpen: 0.114856134610136
+		Niedamir: 0.253243378829059
+		Eyck: 0.677975334624042
+		Villentretenmerth: 0.546535273464772
+		Riv: 0.0440406129218039
+		Velerad: 0.180238806982674
+		Foltest: 0.341265442231896
+		Ostrit: -0.260524001957808
+		Caldemeyn: 0.874438247196118
+		Stregobor: 0.138308670160083
+		Nohorn: 0.294613360595773
+		Civril: 0.0515959792136512
+		Renfri: -0.0630952817524859
+		Marilka: -1.0
+		Tavik: -0.195743181016218
+Wied¼min
+	WaÅ¼noÅ›Ä‡: 0.166334207031772
+	PozytywnoÅ›Ä‡: -0.0243249358603983 (-0.130270753674527)
+	SÅ‚owa kluczowe: miecz, usta, prawda, krew, czarny, przeznaczenie, dziecko, potwora, sztylet, ostrze
+	Relacje:
+		Andrzej: 1.0
+		Geralt: 0.0134803579919938
+		Freixenet: -0.18997879097073
+		Eithn: 0.549326716145033
+		Braenn: 0.000539332342825297
+		Ciri: -0.508981557456897
+		Yennefer: 0.1890665597901
+		Istredd: 0.437941724364426
+		Yen: -0.00353534633584746
+		Dainty: -1.0
+		Tellico: -0.866341280935999
+		Chappelle: 0.0309042541521747
+		Nivellen: -0.0411324875292943
+		Bruxa: -0.434078689027657
+		Vea: 0.115033978142608
+		Zerrikanki: -0.0197832766465881
+		Dorregaray: -0.0452109027883659
+		Boholt: -0.073683595624949
+		Yarpen: -0.173896279449724
+		Niedamir: -0.320498069596789
+		Eyck: 0.169906745463065
+		Riv: 0.0795553673967697
+		Velerad: 0.678994500543092
+		Foltest: 0.53581184442819
+		Ostrit: -0.176873062168085
+		Caldemeyn: 0.0305084745568478
+		Stregobor: -0.721177291003355
+		Civril: -0.144576202618535
+		Renfri: 0.142155308112857
+		Tavik: 0.200525139171319
+Visenna
+	WaÅ¼noÅ›Ä‡: 0.0679258690136439
+	PozytywnoÅ›Ä‡: 0.126384269719846 (0.0765892851478332)
+	SÅ‚owa kluczowe: zimno, usta, pomoc, pot, u¶miech, nagle, spokojnie, szkoda, zabicie, cisza
+	Relacje:
+		Korin: 0.309693629815734
+		Ko¶ciej: -0.595496746302356
+		Topin: 1.0
+		Mikula: 0.783940539204261
+		Radim: -0.754186031359944
+		Bobo³ak: -1.0
+		Fregenal: -0.0356789000548762
+Braenn
+	WaÅ¼noÅ›Ä‡: 0.0376057106489863
+	PozytywnoÅ›Ä‡: 0.251087519808027 (0.462686646420375)
+	SÅ‚owa kluczowe: noc, dobro, ³uk, b³yskawicznie, nagle, zwinnie, prawda, zaraza, ¿yæ, ponuro
+	Relacje:
+		Geralt: 0.0243244468106988
+		Wied¼min: 0.0236199507125667
+		Freixenet: 0.128863288110621
+		Eithn: 0.150350652945361
+		Ciri: 1.0
+Yennefer
+	WaÅ¼noÅ›Ä‡: 0.0354503356331204
+	PozytywnoÅ›Ä‡: 0.0207723015634583 (0.0212338115534075)
+	SÅ‚owa kluczowe: smok, szlachetny, nagle, usta, blady, wielmo¿ny, czarny, inny, dobro, zimno
+	Relacje:
+		Geralt: -0.350513545064912
+		Wied¼min: 0.468268538478805
+		Eithn: 1.0
+		Istredd: 0.0463457962098064
+		Yen: 0.182256122780708
+		Vea: -0.9474435196195
+		Zerrikanki: -1.0
+		Dorregaray: 0.794488015573877
+		Boholt: -0.494189730002538
+		Yarpen: 0.260279152433362
+		Niedamir: -0.904812086317421
+		Eyck: 0.375346534792283
+		Villentretenmerth: -0.480376766091052
+		Riv: 0.774912475024028
+Ciri
+	WaÅ¼noÅ›Ä‡: 0.0323013550755002
+	PozytywnoÅ›Ä‡: 0.0826575918447373 (0.126238994015709)
+	SÅ‚owa kluczowe: przeznaczenie, straszny, dobro, babka, dziecko, nagle, kosooki, bajka, prawda, krew
+	Relacje:
+		Andrzej: -0.710180484132829
+		Geralt: 0.509527525407753
+		Freixenet: -0.274957566263152
+		Eithn: 0.454337868237652
+		Braenn: 0.659639579589182
+		Taak: 1.0
+Korin
+	WaÅ¼noÅ›Ä‡: 0.0289085084637657
+	PozytywnoÅ›Ä‡: -0.0692445722208651 (-0.192721148983424)
+	SÅ‚owa kluczowe: miecz, usta, czaszka, blask, sen, wrzask, ¶mieræ, gwa³townie, brak, inny
+	Relacje:
+		Visenna: 0.41480572137444
+		Ko¶ciej: -0.641317726432787
+		Topin: -0.271613902376459
+		Mikula: -1.0
+		Bobo³ak: 1.0
+		Fregenal: -0.570440259505449
+		Andrzej: 0.179396733647281
+Velerad
+	WaÅ¼noÅ›Ä‡: 0.026393681819985
+	PozytywnoÅ›Ä‡: 0.323001980967864 (0.616741257473465)
+	SÅ‚owa kluczowe: pewnie, piwo, prawda, pot, dobro, znak, plotka, miecz, dzieñ, dobra
+	Relacje:
+		Geralt: 0.0598108697869146
+		Wied¼min: 1.0
+		Riv: 0.388759498760982
+		Foltest: 0.359916559133578
+		Ostrit: 0.135790615357607
+Foltest
+	WaÅ¼noÅ›Ä‡: 0.0208952742239479
+	PozytywnoÅ›Ä‡: 0.314388694367534 (0.501757230678045)
+	SÅ‚owa kluczowe: rozumny, prawda, stary, pot, ³adny, ¶mieræ, pewnie, nowy, szczup³y, ¶liczny
+	Relacje:
+		Geralt: 0.106993732690764
+		Wied¼min: 1.0
+		Riv: 0.401152173204437
+		Velerad: 0.546639495961432
+		Ostrit: -1.0
+Renfri
+	WaÅ¼noÅ›Ä‡: 0.0202728356794018
+	PozytywnoÅ›Ä‡: -0.0183983730411393 (-0.10202973451534)
+	SÅ‚owa kluczowe: klinga, z³o, cisza, miecz, znak, zabiæ, spokojnie, zimno, powa¿nie, zwinnie
+	Relacje:
+		Geralt: -0.105152242899101
+		Wied¼min: 0.505781469044837
+		Riv: 0.477084648106123
+		Caldemeyn: 0.435944069878229
+		Stregobor: -0.053036619240002
+		Civril: 0.299915028374942
+		Marilka: -0.07364143991947
+		Tavik: -1.0
+Boholt
+	WaÅ¼noÅ›Ä‡: 0.0176577047561336
+	PozytywnoÅ›Ä‡: -0.204512923553619 (-0.46437751223833)
+	SÅ‚owa kluczowe: smok, miecz, nagle, rêbacz, inny, powa¿ny, z³oty, dobra, spokojnie, gad
+	Relacje:
+		Geralt: -0.261136760656642
+		Wied¼min: -0.0772862806317671
+		Yennefer: -0.581077677700443
+		Taak: 1.0
+		Vea: 0.116902458293225
+		Dorregaray: 0.0249667428969682
+		Yarpen: -0.405636375799567
+		Niedamir: -0.642455556958799
+		Eyck: -1.0
+		Villentretenmerth: -0.882675095448054
+Dainty
+	WaÅ¼noÅ›Ä‡: 0.017279880434832
+	PozytywnoÅ›Ä‡: 0.029312442111406 (-0.0617356289141629)
+	SÅ‚owa kluczowe: prawda, alkierz, cholera, nagle, ponuro, brudny, z³e, z³owrogo, dobro, korona
+	Relacje:
+		Geralt: -2.27866624194949e-05
+		Wied¼min: -1.0
+		Doppler: 0.465497670716547
+		Tellico: 0.484591254308442
+		Taak: 1.0
+		Chappelle: 0.592807723829612
+		Vivaldi: 0.263873086021997
+Andrzej
+	WaÅ¼noÅ›Ä‡: 0.0164666922497805
+	PozytywnoÅ›Ä‡: 0.48678978828383 (1.0)
+	SÅ‚owa kluczowe: przyjemno¶æ, koniec, prawda, czarny, z³o, lód, list, niebo, trup, jasny
+	Relacje:
+		Korin: 0.0280498156780202
+		Geralt: 0.00647769717669824
+		Wied¼min: 1.0
+		Ciri: -1.0
+		Istredd: 0.136928902873125
+		Vea: 0.146545429803732
+Tellico
+	WaÅ¼noÅ›Ä‡: 0.0162197200209693
+	PozytywnoÅ›Ä‡: 0.044437673148934 (0.00365256629804881)
+	SÅ‚owa kluczowe: spokojnie, nagle, kapelusik, zabiæ, g³upi, matka, miecz, przyjaciel, prawda, grymas
+	Relacje:
+		Geralt: -0.0901291191982068
+		Wied¼min: -1.0
+		Dainty: 0.105184510980038
+		Doppler: -0.0866110537161265
+		Chappelle: 0.173430759177921
+		Vivaldi: 1.0
+Doppler
+	WaÅ¼noÅ›Ä‡: 0.0160187268684169
+	PozytywnoÅ›Ä‡: 0.0900612601469294 (0.180780113071629)
+	SÅ‚owa kluczowe: znak, zimno, z³oto, ciê¿ko, rozumny, miecz, strza³a, zabicie, usta, pot
+	Relacje:
+		Geralt: -0.481974921816418
+		Wied¼min: -1.0
+		Dainty: 1.0
+		Tellico: -0.106477236072965
+Eithn
+	WaÅ¼noÅ›Ä‡: 0.014908544013809
+	PozytywnoÅ›Ä‡: 0.213053289145944 (0.401426102984774)
+	SÅ‚owa kluczowe: zimno, dziecko, przeznaczenie, dobro, nienawi¶æ, wilk, inny, bia³y, ostro, stara
+	Relacje:
+		Geralt: 0.493348515486743
+		Wied¼min: 0.855602615805872
+		Freixenet: 0.932294754390525
+		Braenn: 0.115269702051861
+		Ciri: 0.29804435468514
+		Yennefer: 1.0
+Ostrit
+	WaÅ¼noÅ›Ä‡: 0.0138971081886673
+	PozytywnoÅ›Ä‡: -0.12260946174626 (-0.28289510241957)
+	SÅ‚owa kluczowe: trup, serce, ciê¿ko, miecz, ciemno¶æ, sztylet, spokojnie, srebrny, gwa³townie, ostrze
+	Relacje:
+		Geralt: -0.463815223997055
+		Wied¼min: -0.146772760256823
+		Riv: -1.0
+		Velerad: 1.0
+		Foltest: -0.112061102408918
+Istredd
+	WaÅ¼noÅ›Ä‡: 0.0138971081886673
+	PozytywnoÅ›Ä‡: 0.0868397791861225 (0.133103950828295)
+	SÅ‚owa kluczowe: prawda, wiedza, miecz, prawo, krew, prosto, piê¶æ, czaszka, dobro, zabiæ
+	Relacje:
+		Andrzej: 0.313937266437373
+		Geralt: 0.00349481112776338
+		Wied¼min: 1.0
+		Yennefer: 0.0846102545924591
+		Yen: 0.0628635395054317
+Bobo³ak
+	WaÅ¼noÅ›Ä‡: 0.0136840372782203
+	PozytywnoÅ›Ä‡: -0.0142849419535357 (-0.134640572778586)
+	SÅ‚owa kluczowe: prawy, gruby, ¿ycie, pot, ³apa, maleñka, potwora, trud, strach, bia³y
+	Relacje:
+		Visenna: -0.844672657252888
+		Korin: 1.0
+		Ko¶ciej: -1.0
+		Mikula: 0.301770600305791
+		Fregenal: 0.529766249968099
+Dorregaray
+	WaÅ¼noÅ›Ä‡: 0.0113734625484799
+	PozytywnoÅ›Ä‡: 0.0797507857146205 (0.172371031486933)
+	SÅ‚owa kluczowe: smok, mistrz, diabe³, ostatni, potrzebny, piê¶æ, ostro, dziwny, z³oty, prawdziwy
+	Relacje:
+		Geralt: -0.00741701416386557
+		Wied¼min: -0.0113870928572896
+		Yennefer: 0.344159838658542
+		Yen: -0.132119736452799
+		Vea: -0.044570513502149
+		Zerrikanki: -0.280779611964996
+		Boholt: 0.0729019135868592
+		Yarpen: 0.00419122669770163
+		Niedamir: -0.159644950631672
+		Eyck: -1.0
+		Riv: 1.0
+Caldemeyn
+	WaÅ¼noÅ›Ä‡: 0.0102280429265763
+	PozytywnoÅ›Ä‡: 0.228940431345429 (0.429805503951042)
+	SÅ‚owa kluczowe: mistrz, t³um, zêbaty, dobry, koniec, nagroda, usta, spotkanie, pamiêæ, pot
+	Relacje:
+		Geralt: 0.521514436357677
+		Wied¼min: 0.0684559692892898
+		Riv: 0.534944288431923
+		Stregobor: 1.0
+		Renfri: 0.300777870841655
+Fregenal
+	WaÅ¼noÅ›Ä‡: 0.00997630294488096
+	PozytywnoÅ›Ä‡: 0.13126455082161 (0.239574228348268)
+	SÅ‚owa kluczowe: ¿ycie, znak, spokojnie, pier¶, pot, wa¿ny, czaszka, z³owrogo, strach, miecz
+	Relacje:
+		Visenna: 0.00755581017387435
+		Korin: -1.0
+		Mikula: -0.160721217813959
+		Bobo³ak: 1.0
+Eyck
+	WaÅ¼noÅ›Ä‡: 0.00996664142173437
+	PozytywnoÅ›Ä‡: 0.159537619355236 (0.269315057260259)
+	SÅ‚owa kluczowe: rycerz, smok, szlachetny, dobre, powo³anie, gad, ³apa, diabe³, kupa, z³o
+	Relacje:
+		Geralt: 0.850318952501668
+		Wied¼min: 0.876385008996983
+		Yennefer: 0.157564131959943
+		Dorregaray: -1.0
+		Boholt: -0.281661483706675
+		Yarpen: -0.897844085293341
+		Niedamir: 1.0
+		Smocz±tko: -0.0166330225082718
+		Villentretenmerth: -0.90886238215847
+Nivellen
+	WaÅ¼noÅ›Ä‡: 0.00984082333949782
+	PozytywnoÅ›Ä‡: 0.147448041392243 (-0.0790931676441371)
+	SÅ‚owa kluczowe: kie³, urok, potwór, dziêki, si³a, piêkno, potwora, zaraza, ³apa, s³usznie
+	Relacje:
+		Geralt: 1.0
+		Wied¼min: 0.190981225176659
+		Bruxa: -1.0
+Riv
+	WaÅ¼noÅ›Ä‡: 0.00973112310952664
+	PozytywnoÅ›Ä‡: 0.167158131559717 (0.323143209315357)
+	SÅ‚owa kluczowe: miecz, bia³y, prawda, nieznajomy, ³eb, pier¶, piwo, koniec, wilk, dzieñ
+	Relacje:
+		Andrzej: 0.00190128520361929
+		Geralt: 0.00629395883311483
+		Wied¼min: 0.021997462807058
+		Yennefer: 0.117021276595745
+		Chappelle: 0.28125
+		Vea: 0.121061296859169
+		Dorregaray: 0.243824781782579
+		Smocz±tko: 0.6875
+		Villentretenmerth: 0.434210526315789
+		Velerad: 0.0764560039629697
+		Foltest: 0.181133827304338
+		Ostrit: -1.0
+		Caldemeyn: 0.0891682330827068
+		Stregobor: 1.0
+		Renfri: 0.0501519756838906
+Chappelle
+	WaÅ¼noÅ›Ä‡: 0.00964399974000488
+	PozytywnoÅ›Ä‡: 0.224231848774118 (0.371671979988231)
+	SÅ‚owa kluczowe: lekko, nagle, pot, czarny, prawdziwy, spokojnie, wieczny, prawda, inny, ostatni
+	Relacje:
+		Geralt: 0.205913684290248
+		Wied¼min: 0.0148839220298691
+		Dainty: 0.127153110153309
+		Tellico: 0.327461882191162
+		Vivaldi: 0.329444169036604
+		Riv: 1.0
+Mikula
+	WaÅ¼noÅ›Ä‡: 0.00956445197878005
+	PozytywnoÅ›Ä‡: -0.0344285178106528 (-0.206321376393668)
+	SÅ‚owa kluczowe: rana, ludzki, miecz, ostrze, t³um, pomoc, ³apa, dom, dziewka, inny
+	Relacje:
+		Visenna: 1.0
+		Korin: -0.847720127443188
+		Ko¶ciej: -1.0
+		Radim: 0.0881931963955113
+		Bobo³ak: 0.431043453168245
+		Fregenal: -0.310537078785991
+Ko¶ciej
+	WaÅ¼noÅ›Ä‡: 0.00826527248191775
+	PozytywnoÅ›Ä‡: -0.239040827691156 (-0.723110853413086)
+	SÅ‚owa kluczowe: miecz, ³apa, list, prosto, si³a, zêbaty, potwora, pstrokaty, ¶mieræ, dziewka
+	Relacje:
+		Visenna: -0.339518949220659
+		Korin: -0.575753599842552
+		Topin: 1.0
+		Mikula: -1.0
+		Bobo³ak: -0.638425805338834
+Topin
+	WaÅ¼noÅ›Ä‡: 0.00826527248191775
+	PozytywnoÅ›Ä‡: 0.341489771911803 (0.847910215974705)
+	SÅ‚owa kluczowe: wielmo¿ny, dziêki, ciep³o, cisza, lepiej, noc, ¿ywy, dziecko, kupa, dobro
+	Relacje:
+		Visenna: 0.464786789792503
+		Korin: -1.0
+		Ko¶ciej: 1.0
+Civril
+	WaÅ¼noÅ›Ä‡: 0.00766468886729527
+	PozytywnoÅ›Ä‡: -0.126649240628143 (-0.26593720343603)
+	SÅ‚owa kluczowe: grupa, matka, zbój, miecz, paskudny, stara, strasznie, kupa, wa¿ny, z³owrogo
+	Relacje:
+		Geralt: -0.0139853640306858
+		Wied¼min: -0.18332036328977
+		Nohorn: -1.0
+		Renfri: 0.739984155351366
+		Marilka: -0.781880865790819
+		Tavik: 1.0
+Freixenet
+	WaÅ¼noÅ›Ä‡: 0.00704916576886818
+	PozytywnoÅ›Ä‡: 0.0912957123970739 (0.0803433754416915)
+	SÅ‚owa kluczowe: dziecko, lekko, krew, szczê¶cie, ciê¿ko, urok, zaraza, ¿yæ, nagle, diabe³
+	Relacje:
+		Geralt: 0.0959324258647295
+		Wied¼min: -1.0
+		Eithn: 1.0
+		Braenn: 0.0631093532820448
+		Ciri: -0.504945846776808
+Smocz±tko
+	WaÅ¼noÅ›Ä‡: 0.00698628571591735
+	PozytywnoÅ›Ä‡: -0.179429880665255 (-0.395555266670123)
+	SÅ‚owa kluczowe: smok, czarny, dziêki, koniec, wolny, potwora, z³o
+	Relacje:
+		Yen: -1.0
+		Eyck: -0.0157366936186462
+		Villentretenmerth: -0.256578919344877
+		Riv: 1.0
+Vea
+	WaÅ¼noÅ›Ä‡: 0.00610166096752065
+	PozytywnoÅ›Ä‡: 0.355961827897835 (0.574674975787918)
+	SÅ‚owa kluczowe: s³usznie, smok, nagle, bia³y, pysk, z³oty, suchy, piwo, wyra¼nie, ¶miech
+	Relacje:
+		Andrzej: 0.494543136296511
+		Geralt: 0.601803706208635
+		Wied¼min: 0.268437848356321
+		Yennefer: -1.0
+		Zerrikanki: 0.781482872322115
+		Boholt: 0.481218713737853
+		Riv: 1.0
+Yarpen
+	WaÅ¼noÅ›Ä‡: 0.00555113369085656
+	PozytywnoÅ›Ä‡: -0.149616914230297 (-0.23111397606365)
+	SÅ‚owa kluczowe: smok, wrzask, psi, gad, ludzki, grymas, z³oty, miecz, cholera, wiedza
+	Relacje:
+		Geralt: 0.0308174525182593
+		Wied¼min: -0.170477130760907
+		Yennefer: 0.100786472653729
+		Dorregaray: 0.00215648785146421
+		Boholt: -0.153912035907132
+		Niedamir: -0.00833043139546055
+		Eyck: -1.0
+		Villentretenmerth: 1.0
+Marilka
+	WaÅ¼noÅ›Ä‡: 0.0055284650262737
+	PozytywnoÅ›Ä‡: -0.320204812943387 (-0.622389962787688)
+	SÅ‚owa kluczowe: miecz, krzyk, z³o, loch, prawdziwy, s³oñce, pewnie, ciemno¶æ, baba, plotka
+	Relacje:
+		Geralt: -1.0
+		Civril: -0.299970069609268
+		Renfri: -0.127559174445413
+Stregobor
+	WaÅ¼noÅ›Ä‡: 0.0055284650262737
+	PozytywnoÅ›Ä‡: 0.0246431007138137 (-0.0694635640142777)
+	SÅ‚owa kluczowe: zabiæ, z³o, miecz, jasny, dzieñ, potwora, zabicie, pomoc, z³odziej, przyjaciel
+	Relacje:
+		Geralt: 0.0148010070712625
+		Wied¼min: -1.0
+		Riv: 1.0
+		Caldemeyn: 0.28125
+		Renfri: -0.169348499656008
+Vivaldi
+	WaÅ¼noÅ›Ä‡: 0.00501095893499539
+	PozytywnoÅ›Ä‡: 0.177965080494923 (0.351992953209171)
+	SÅ‚owa kluczowe: ciekawy, inaczej, stary, d³ugi, zimno, korona, le¿e, szkoda, z³oty, prawda
+	Relacje:
+		Geralt: -1.0
+		Dainty: 0.0549468839039968
+		Tellico: 1.0
+		Taak: 0.217281827897597
+		Chappelle: 0.264310905607318
+Niedamir
+	WaÅ¼noÅ›Ä‡: 0.00489299279933219
+	PozytywnoÅ›Ä‡: 0.00937793497334007 (-0.0813912792776988)
+	SÅ‚owa kluczowe: smok, miecz, powo³anie, królewski, spokój, walka, dzieñ, wied¼ma, rêbacz, zabicie
+	Relacje:
+		Geralt: 0.185143748894308
+		Wied¼min: -0.4831486611265
+		Yennefer: -0.878141812952258
+		Vea: 1.0
+		Zerrikanki: -1.0
+		Dorregaray: -0.590173537147996
+		Boholt: -0.987794904479418
+		Yarpen: -0.0221227360682643
+		Eyck: 0.647011602783726
+		Villentretenmerth: -0.654608718487395
+Radim
+	WaÅ¼noÅ›Ä‡: 0.00425750819823853
+	PozytywnoÅ›Ä‡: -0.103922246671466 (-0.0663891625721824)
+	SÅ‚owa kluczowe: koniec, zbój, zabiæ, jasnow³osy, uderzenie, wyra¼nie, wysoki, dobro, inny, prosto
+	Relacje:
+		Visenna: -1.0
+		Mikula: 1.0
+Bruxa
+	WaÅ¼noÅ›Ä‡: 0.0041659850791407
+	PozytywnoÅ›Ä‡: -0.503270680852718 (-1.0)
+	SÅ‚owa kluczowe: kie³, miecz, ³eb, srebro, krew, koniec, bia³y, wrzask, straszny, blady
+	Relacje:
+		Geralt: -1.0
+		Wied¼min: -0.408136020667821
+		Nivellen: -0.936297653800942
+Villentretenmerth
+	WaÅ¼noÅ›Ä‡: 0.00383484455986815
+	PozytywnoÅ›Ä‡: -0.164942281327079 (-0.377040507081548)
+	SÅ‚owa kluczowe: smok, koniec, zapad³y, walka, rycerz, cisza, wolny, ³apa, obrona, zêbaty
+	Relacje:
+		Geralt: 0.119662231194073
+		Yennefer: -0.234792157897008
+		Zerrikanki: 0.773747841105354
+		Boholt: -0.337216259947635
+		Yarpen: 1.0
+		Niedamir: -0.16852929087554
+		Eyck: -1.0
+		Smocz±tko: -0.290228153881331
+		Riv: 0.916280338151077
+Yen
+	WaÅ¼noÅ›Ä‡: 0.00381656719778414
+	PozytywnoÅ›Ä‡: 0.175927126825184 (0.268863705270138)
+	SÅ‚owa kluczowe: szlachetny, dobro, smok, usta, nagle, czarny, powo³anie, prawda, wielmo¿ny, zaraza
+	Relacje:
+		Geralt: 1.0
+		Wied¼min: 0.277789101462368
+		Yennefer: 0.289910839536558
+		Istredd: 0.0534865160017698
+		Dorregaray: -0.125
+		Smocz±tko: -1.0
+Tavik
+	WaÅ¼noÅ›Ä‡: 0.00358178131149874
+	PozytywnoÅ›Ä‡: -0.24712694246342 (-0.464730884246435)
+	SÅ‚owa kluczowe: miecz, krzyk, gêba, spokojnie, uderzenie, dom, niewa¿ny, grupa, nagle, cisza
+	Relacje:
+		Geralt: -0.248741030517853
+		Wied¼min: 1.0
+		Nohorn: -0.117906516702107
+		Civril: 0.359235150638815
+		Renfri: -1.0
+Nohorn
+	WaÅ¼noÅ›Ä‡: 0.00353977184457828
+	PozytywnoÅ›Ä‡: -0.0108274019162974 (-0.107601228410872)
+	SÅ‚owa kluczowe: wysoki, delikatny, gêba, miecz, ciêcie, matka, w±tpliwo¶æ, drewniany, cios, czarny
+	Relacje:
+		Geralt: 0.390804541838965
+		Civril: -1.0
+		Tavik: -0.263571351500183
+Zerrikanki
+	WaÅ¼noÅ›Ä‡: 0.0035309267017272
+	PozytywnoÅ›Ä‡: 0.198933918573257 (0.427842896176993)
+	SÅ‚owa kluczowe: piwo, lepszy, smok, s³usznie, dziecko, nó¿, cholera, walka, wyra¼nie, pomoc
+	Relacje:
+		Geralt: 0.20264646732367
+		Wied¼min: -0.018340793458555
+		Yennefer: -1.0
+		Vea: 0.33132213420313
+		Dorregaray: -0.614787258777029
+		Niedamir: -0.883025575195023
+		Villentretenmerth: 1.0
+Taak
+	WaÅ¼noÅ›Ä‡: 0.00329536874953771
+	PozytywnoÅ›Ä‡: 0.117383343652243 (0.313121973917854)
+	SÅ‚owa kluczowe: korona, nie¼le, piwo, czarny, dobro, usta, lepszy, gruby, dom, list
+	Relacje:
+		Geralt: 0.0465352032591533
+		Ciri: 0.18406158200314
+		Dainty: 0.0844815431043993
+		Vivaldi: 0.135648441496616
+		Boholt: 1.0

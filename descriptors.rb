@@ -56,7 +56,7 @@ class EmotionalClassifier
     end
 
     heroes.each_with_index do |hero, i| 
-      hero.goodness = relations[i][i]/word_nos[i][i]
+      hero.goodness = word_nos[i][i] != 0 ? relations[i][i]/word_nos[i][i] : 0
       hero.relations = relations[i].zip(word_nos[i]).map{|x| x[0]*x[1] != 0 ? x[0]/x[1] : 0}
       hero.relations[i] = 0
       max = hero.relations.max
