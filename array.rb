@@ -3,6 +3,10 @@ class Array
     self.inject{|x,y| x+y}
   end
 
+  def avg
+    self.sum / self.size
+  end
+
   def normalize!
     sum = self.sum
     if sum == 0

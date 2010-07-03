@@ -9,12 +9,6 @@ require 'clp'
 require 'string'
 require 'array'
 
-text = ""
-
-for file in Dir.glob("teksty/*")
-  File.open(file) { |f| text += f.read }
-end
-
 class EmotionalClassifier
   def self.classify(heroes, text, radius = 50)
     names = heroes.map{|x| x.name}
@@ -52,6 +46,7 @@ class EmotionalClassifier
           if dist1 && dist2 && (dist1 + dist2) != 0
             relations[i][j] += value*1.0/(dist1+dist2)
             word_nos[i][j] += 1
+            personal[names[i]][word] += 1.0/dist1 if i == j
           end
         end
       end
@@ -59,12 +54,39 @@ class EmotionalClassifier
 
     heroes.each_with_index do |hero, i| 
       hero.goodness = relations[i][i]/word_nos[i][i]
-      #hero.relations = relations[i]
-      #hero.relations[i] = 0
+      hero.relations = relations[i].zip(word_nos[i]).map{|x| x[0]*x[1] != 0 ? x[0]/x[1] : 0}
+      hero.relations[i] = 0
+      max = hero.relations.max
+      min = hero.relations.min
+      hero.relations.map! do |x|
+        if x > 0
+          x/max
+        elsif x < 0
+          -x/min
+        else
+          0
+        end
+      end
     end
 
     max = heroes.map{|x| x.goodness}.max
     min = heroes.map{|x| x.goodness}.min
-    heroes.each {|x| x.goodness = 2*(x.goodness - min)/(max-min) - 1.0}
+    heroes.each do |x| 
+      x.goodness = 
+        if x.goodness > 0
+          x.goodness/max
+        elsif x.goodness < 0
+          -x.goodness/min
+        else 
+          0
+        end
+    end
+    
+    heroes.each do |hero|
+      old = hero.relations
+      hero.relations = {}
+      heroes.each_with_index {|other, i| hero.relations[other] = old[i] if other != hero && old[i] != 0}
+      hero.keywords = personal[hero.name].sort{|x, y| y[1] - x[1]}.map{|x| x[0]}.select{|x| x.emotional_value != 0 && x.part_of_speech != :verb}[0..9]
+    end
   end
 end
